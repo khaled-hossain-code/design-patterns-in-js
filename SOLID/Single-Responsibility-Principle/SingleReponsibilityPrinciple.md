@@ -83,7 +83,11 @@ Now we have added 2 responsibility to our `Journal` class.
 1. Persist journal
 
 Suppose we need to remove indices before saving and add indices after loading, all these things need to be done inside `Journal` class.
-Now we start to sell books. We store books to file system and database too. Now see as the requirement changes we have to do all the loading and saving again in `Book` class. So saving journal or book should be handled by a general persistance manager.
+Now we start to sell books. We store books to file system and database too. Now see as the requirement changes we have to do all the loading and saving again in `Book` class.
+
+## solution
+
+So saving journal or book should be handled by a general persistance manager.
 
 ```javascript
 class PersistenceManager {
